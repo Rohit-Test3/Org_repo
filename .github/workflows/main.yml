@@ -7,7 +7,7 @@ jobs:
    steps:
      - uses: actions/checkout@v2
      - uses: snyk/actions/setup@master
-     -name: Snyk Auth
+     - name: Snyk Auth
       run: snyk auth a855ee3e-335a-4096-a593-f6d930854acd
      - name: Snyk Test
        run: snyk test --sarif-file-output=snyk-sarif.json
